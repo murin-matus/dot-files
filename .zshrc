@@ -8,7 +8,7 @@ prompt redhat
 # history settings
 HISTSIZE=2000
 SAVEHIST=2000
-HISTFILE=.zsh_history
+HISTFILE=~/.zsh_history
 
 # prevent duplicates in history
 setopt HIST_IGNORE_ALL_DUPS
@@ -30,3 +30,12 @@ ttyctl -f
 
 # change directory without 'cd' command
 setopt AUTOCD
+
+# home key
+bindkey "\033[1~" beginning-of-line
+
+# end key
+bindkey "\033[4~" end-of-line
+
+# delete key
+bindkey "^[[3~" delete-char
