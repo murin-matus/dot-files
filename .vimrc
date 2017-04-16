@@ -18,7 +18,7 @@ set textwidth=128               " Change default wrap line (80)
 set t_Co=256                    " Enable 256 colors
 set ruler                       " Show cursor position
 set number                      " Show line numbers
-set backspace=indent,eol,start      " Change backspace behaviour
+set backspace=indent,eol,start  " Change backspace behaviour
 filetype plugin on              " Enable plugins based on filetype
 filetype indent on              " Enable indentation based on filetype
 
