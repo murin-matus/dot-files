@@ -53,3 +53,7 @@ man() {
         LESS_TERMCAP_us=$(printf "\e[1;32m") \
             man "$@"
 }
+
+# non-alphanumeric chars treated as part of a word
+# delimeters for ^w
+WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
