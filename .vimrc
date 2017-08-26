@@ -5,13 +5,14 @@ filetype on                     " Enable filetype detection
 set noerrorbells                " Disable error sounds
 set novisualbell                " Disable visual error
 set t_vb=                       " Set visual bell to do nothing
+set cursorline                  " Highlight cursor line
 
 " Encoding
 set encoding=utf-8              " Encoding
 
 " System
 set nocompatible                " Disable vi compatibility
-set wildmenu                    " Show 
+set wildmenu                    " Show visual autocomplete for commands
 
 " Editor
 set textwidth=128               " Change default wrap line (80)
@@ -32,7 +33,7 @@ set tabstop=4
 syntax on                       " Enable syntax highlighting
 set autoindent                  " Enable auto indentation
 set smartindent                 " Enable smart indentation
-set showmatch                   " Show matching braces
+set showmatch                   " Show matching [{()}]
 set nowrap                      " Disable line wrapping
 
 " Search settings
