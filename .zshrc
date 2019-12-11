@@ -1,5 +1,8 @@
-autoload -Uz compinit promptinit
-compinit -u
+fpath+=~/.zfunc
+
+autoload -Uz promptinit 
+autoload -Uz compinit -d ~/.zcompdump_custom && compinit -i
+
 promptinit -u
 
 # set prompt style
